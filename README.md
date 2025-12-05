@@ -6,9 +6,7 @@ A simple React task manager with multi page navigation and local storage support
 
 Place your deployed link here
 
-```
-https://router-taskmanager.netlify.app/
-```
+![Live review](https://router-taskmanager.netlify.app/)
 
 ## Screenshot
 
