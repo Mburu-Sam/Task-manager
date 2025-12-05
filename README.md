@@ -1,74 +1,93 @@
-# Task Manager
+# Task Manager (React Router Version)
 
-A simple React task manager with multi page navigation and local storage support.
+A simple task manager built with React, React Router, and Context API.
+You can add tasks, edit tasks, delete tasks, filter by category, set priority, and mark tasks as completed or pending.
+The app also includes a settings page where you switch themes and reset all tasks.
 
-## Live URL
+## Live Demo
 
-Place your deployed link here
-
-![Live review](https://router-taskmanager.netlify.app/)
-
-## Screenshot
-
-Create a folder named `screenshots` in the project root.
-Add your image file inside it.
-
-Example structure
-
-```
-project-root
-  src
-  public
-    home.png
-  README.md
-```
+[https://router-taskmanager.netlify.app/](https://router-taskmanager.netlify.app/)
 
 ## Features
 
-* Add tasks
-* Edit tasks
+* Add new tasks
+* Edit existing tasks
 * Delete tasks
-* Mark tasks as complete
-* Dark mode
-* Local storage persistence
-* Navigation built with React Router
+* Mark tasks as completed or pending
+* Filter tasks by category
+* Task priority levels
+* Light and dark theme
+* Routing across pages using React Router
+* Data saved in localStorage
+* Clean layout with normal CSS
+
+## Pages
+
+### Home
+
+Short introduction and navigation links.
+
+### Tasks
+
+Main task dashboard.
+Includes:
+
+* Add task form
+* Task list
+* Edit modal
+* Category filters
+* Priority display
+* Completion status
+
+### Settings
+
+* Switch between light and dark theme
+* Reset all tasks
+* View total task count
 
 ## Project Structure
 
 ```
-src
-  components
+src/
+  components/
+    BottomMOdal.jsx
     Sidebar.jsx
-    TaskForm.jsx
     TaskItem.jsx
-  context
-    TaskContext.jsx
-  pages
+    TaskForm.jsx
+    EditModal.jsx
+  pages/
     Home.jsx
+    Dashboard.jsx
     Tasks.jsx
     Settings.jsx
-  styles
+  context/
+    TaskContext.jsx
+  styles/
     main.css
+    styles.css
+    sidebar.css
   App.jsx
   main.jsx
 ```
 
-## Installation
+## Tech Stack
 
-Install dependencies
+* React
+* React Router
+* Context API
+* CSS
+* localStorage for persistence
+
+## How to Run Locally
+
+### 1. Install dependencies
 
 ```
 npm install
 ```
 
-Start the project
+### 2. Start the development server
 
 ```
 npm run dev
-```
-
-Build for production
-
-```
-npm run build
 ```
