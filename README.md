@@ -7,7 +7,7 @@ A simple React task manager with multi page navigation and local storage support
 Place your deployed link here
 
 ```
-https://your-taskmanager-url.netlify.app
+https://router-taskmanager.netlify.app/
 ```
 
 ## Screenshot
@@ -21,15 +21,8 @@ Example structure
 project-root
   src
   public
-  screenshots
     home.png
   README.md
-```
-
-Embed it like this
-
-```
-![Home](./screenshots/home.png)
 ```
 
 ## Features
@@ -81,40 +74,3 @@ Build for production
 ```
 npm run build
 ```
-
-## Deployment on Netlify
-
-1. Run
-
-```
-npm run build
-```
-
-2. Upload the `dist` folder to Netlify
-   or run
-
-```
-npm install -g netlify-cli
-netlify login
-netlify deploy
-```
-
-Choose
-
-```
-dist
-```
-
-## How to Add Screenshots
-
-1. Take a screenshot in Ubuntu by pressing PrtSc
-2. Save the image inside `screenshots` folder
-3. Reference it in the README using
-
-```
-![Task Manager](./screenshots/yourimage.png)
-```
-
----
-
-If you want, I can customize this README using your real project name, your Netlify link, and the screenshot file name.
